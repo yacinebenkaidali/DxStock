@@ -1,0 +1,8 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">DxStock</string>
+    <string name="Consulatation">Consultation</string>
+    <string name="ListedesProduits">La list des produits</string>
+    <string name="Clients_liste">La liste des clients</string>
+
+</resources>

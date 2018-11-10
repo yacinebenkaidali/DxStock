@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context=".Bon_Activity">
+
+    <LinearLayout
+        android:id="@+id/ln_bon_2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lv_bons"
+        android:layout_alignStart="@+id/lv_bons">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/ln_bon"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/sv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_searchview"
+            app:queryHint="Rechecher par code bon... "
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="2dp"
+        android:id="@+id/v5"
+        android:layout_below="@id/ln_bon"
+        android:layout_marginTop="10dp"
+        android:background="#757575" />
+    </LinearLayout>
+
+
+    <ListView
+        android:divider="@null"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_bons"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ln_bon_2" />
+
+
+
+</RelativeLayout>

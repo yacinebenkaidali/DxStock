@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="250dp"
+    android:background="@color/followingBg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:text="Mail ou Base de donnée ?"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/followingBg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/bt_email"
+            android:layout_width="250dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="80dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="Email"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/bt_database"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="Base de données"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

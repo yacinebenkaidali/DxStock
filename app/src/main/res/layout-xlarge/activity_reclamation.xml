@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_dark"
+    android:orientation="vertical"
+    android:padding="46dp">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="15dp"
+        android:text="Dx Stock"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="80sp"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:background="@drawable/card_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp">
+
+    <TextView
+
+        android:textColor="@color/headings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Nom"
+        android:padding="20sp" />
+
+        <TextView
+            android:textColor="@color/black_light"
+            android:id="@+id/rec_nom"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/card_background"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:textSize="22sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+
+            android:textColor="@color/headings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Sujet "
+            android:padding="20sp" />
+
+        <EditText
+            android:text=""
+            android:textColor="@color/black_light"
+            android:id="@+id/rec_sujet"
+            android:textSize="32sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="le sujet de la reclamation"
+            android:padding="20sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:text=""
+        android:background="@drawable/edit_text_style"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="top"
+        android:hint="Votre reclamation"
+        android:fitsSystemWindows="true"
+        android:textColor="#000"
+        android:padding="15dp"
+        android:id="@+id/rec_reclamation"
+        android:textSize="32sp" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:id="@+id/submit"
+        android:paddingLeft="170dp"
+        android:paddingRight="170dp"
+        android:text="Envoyer"
+        android:textColor="#0d47a1"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:textSize="40dp" />
+
+
+</LinearLayout>

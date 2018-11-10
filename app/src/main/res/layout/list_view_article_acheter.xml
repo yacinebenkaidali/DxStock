@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:background="@drawable/card_background"
+        android:focusable="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/desifin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designation :"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_toRightOf="@+id/cbarticle"
+            android:layout_toEndOf="@+id/cbarticle">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Prix :"
+                android:layout_marginRight="5dp"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_alignLeft="@+id/linearLayout4"
+                android:layout_alignStart="@+id/linearLayout4"
+                android:textColor="#304ffe" />
+            <TextView
+                android:id="@+id/prixfin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prix"
+                android:textColor="#304ffe"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_alignLeft="@+id/linearLayout4"
+            android:layout_alignStart="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Quantité Acheté:"
+                android:id="@+id/hide"
+                android:layout_marginRight="5dp"
+                android:textColor="#DF0000"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/qte_disp_fin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Poids"
+                android:textColor="#DF0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_dark"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingBottom="0dp"
+    android:weightSum="1">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" />
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:text="Dx Stock"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp" />
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Nom"
+            android:textColor="@color/headings"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rec_nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/black_light"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/card_background"
+        android:orientation="horizontal"
+        android:textSize="22sp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Sujet "
+            android:textColor="@color/headings"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/rec_sujet"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="le sujet de la reclamation"
+            android:text=""
+            android:textColor="@color/black_light"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="348dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/card_background"
+        android:orientation="horizontal"
+        android:textSize="20sp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Email"
+            android:textColor="@color/headings"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/rec_email"
+            android:layout_width="257dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Email du destinataire"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textColor="@color/black_light"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:text=""
+        android:background="@drawable/edit_text_style"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="top"
+        android:hint="Votre reclamation"
+        android:fitsSystemWindows="true"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:id="@+id/rec_reclamation"
+        android:layout_weight="0.15" />
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/card_background"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_marginBottom="2dp"
+        android:text="Envoyer"
+        android:textColor="#0d47a1" />
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

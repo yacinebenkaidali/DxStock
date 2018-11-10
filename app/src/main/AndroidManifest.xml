@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yacinebenkaidali.dxstock">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.usb.host"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DxStock"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.yacinebenkaidali.dxstock.MainActivity"
+            android:label="Profile"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.example.yacinebenkaidali.dxstock.Admin"
+            android:label="Admin" />
+        <activity
+            android:name=".Produits_Activity"
+            android:label="ListedesProduits"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+
+        <activity android:name="com.example.yacinebenkaidali.dxstock.Consult_Client">
+        </activity>
+        <activity android:name=".Consultation_Activity" />
+        <activity android:name="com.example.yacinebenkaidali.dxstock.Bon_Activity"
+            android:label="Liste des bons">
+
+        </activity>
+        <activity android:name="com.example.yacinebenkaidali.dxstock.Splash" android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+        <activity android:name="com.example.yacinebenkaidali.dxstock.Reclamation"
+            android:label="Reclamations"/>
+        <activity android:name="com.example.yacinebenkaidali.dxstock.Remboursement_Activity"
+            android:label="Remboursement"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+        <activity android:name=".ArticleAcheter_Activity" />
+
+
+    </application>
+
+</manifest>
